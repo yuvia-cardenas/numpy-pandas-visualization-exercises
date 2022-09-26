@@ -27,14 +27,14 @@ unique_fruit
 # 8. Determine how many times each unique string value occurs in fruits.
 len(unique_fruit)
 # 9. Determine the string value that occurs most frequently in fruits.
-max(fruit.value_counts())
+fruit.value_counts().head(1)
 # 10. Determine the string value that occurs least frequently in fruits.
 min(fruit.value_counts())
-# numbers_series.apply(even_or_odd) go back over 9 & 10
+
 
 # Exercise II
 #1. Capitalize all the string values in fruits.
-fruit.str.upper()
+fruit.str.capitalize()
 
 #2. Count the letter "a" in all the string values (use string vectorization).
 
