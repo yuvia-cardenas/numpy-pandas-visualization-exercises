@@ -65,6 +65,9 @@ total_vowel_count
 total_vowel_count = fruit.str.count(r'[aeiou]')
 max_vowel_count = total_vowel_count.max()
 fruit[total_vowel_count == max_vowel_count]
+#same as
+#bool_mask = fruit.str.len() == fruit.str.len().max()
+#fruit[bool_mask]
 
 # Exercise III
 part3_list = list(    'hnvidduckkqxwymbimkccexbkmqygkxoyndmcxnwqarhyffsjpsrabtjzsypmzadfavyrnndndvswreauxovncxtwzpwejilzjrmmbbgbyxvjtewqthafnbkqplarokkyydtubbmnexoypulzwfhqvckdpqtpoppzqrmcvhhpwgjwupgzhiofohawytlsiyecuproguy'
