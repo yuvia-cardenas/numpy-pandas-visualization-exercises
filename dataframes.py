@@ -87,12 +87,9 @@ mpg['mileage_difference'] = (mpg.highway-mpg.city)
 mpg.sort_values(by = 'mileage_difference', ascending=False).head()
 
 #Which compact class car has the lowest highway mileage? The best?
-#df[['name', 'math']]
-#mpg[['highway', 'class']] == 'compact'
-compact_list = mpg['class'] == 'compact'
-compact_list[compact_list]
+compact_list = mpg[mpg['class'] == 'compact']
+compact_list[(compact_list.highway == compact_list.highway.max())] 
 
-#df.sort_values(by='english')
 
 
 
